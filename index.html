@@ -1,44 +1,201 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Supply TREE - GovTech</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Supply TREE - Desburocratizando Compras Públicas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2c6e49;
+      --secondary: #80bfa3;
+      --background: #f7fdf9;
+      --text: #2e2e2e;
+      --muted: #888;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(145deg, #e2f5eb, #c7eede);
+      padding: 5rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: var(--primary);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header p {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      color: var(--muted);
+    }
+    .buttons {
+      margin-top: 2rem;
+    }
+    .buttons a {
+      text-decoration: none;
+      padding: 1rem 2rem;
+      margin: 0 0.5rem;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+    .btn-primary {
+      background-color: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background-color: #1e4f34;
+    }
+    .btn-secondary {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+    .btn-secondary:hover {
+      background-color: var(--primary);
+      color: #fff;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.25rem;
+      color: var(--primary);
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      gap: 2rem;
+    }
+    .three-col {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      padding: 2rem;
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      max-width: 600px;
+      margin: auto;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: var(--primary);
+      color: white;
+      font-weight: bold;
+      padding: 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+    footer a { color: var(--primary); text-decoration: none; }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Supply TREE</h1>
-    <p>Desburocratizando compras públicas e fortalecendo pequenos negócios.</p>
+    <h1>Transformando Compras Públicas com Transparência e Agilidade</h1>
+    <p>Supply TREE conecta órgãos governamentais a fornecedores locais, desburocratizando processos e gerando impacto social real.</p>
+    <div class="buttons">
+      <a href="#contato" class="btn-primary">Agende uma Apresentação</a>
+      <a href="#sobre" class="btn-secondary">Saiba mais</a>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Transformando a forma como governos compram</h2>
-    <p>
-      Supply TREE é uma GovTech que conecta órgãos públicos a pequenos fornecedores locais,
-      promovendo agilidade, transparência e inclusão.
-    </p>
-    <a href="#contato" class="btn">Quero Saber Mais</a>
+  <section id="sobre">
+    <h2 class="section-title">Por que a Supply TREE?</h2>
+    <div class="grid three-col">
+      <div class="card">
+        <h3>🏛 Digitalização de Compras</h3>
+        <p>Modernize processos internos e elimine a papelada com uma solução segura e eficiente.</p>
+      </div>
+      <div class="card">
+        <h3>🌱 Estímulo à Economia Local</h3>
+        <p>Empodere micro e pequenas empresas ao facilitar sua entrada no mercado público.</p>
+      </div>
+      <div class="card">
+        <h3>🔍 Transparência e Legalidade</h3>
+        <p>Tudo auditável, documentado e dentro dos limites legais vigentes.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="sobre">
-    <h2>Por que Supply TREE?</h2>
-    <ul>
-      <li>🌱 Simplificamos processos de compras governamentais</li>
-      <li>🤝 Incentivamos micro e pequenas empresas locais</li>
-      <li>💡 Promovemos inovação e transparência no setor público</li>
-    </ul>
+  <section>
+    <h2 class="section-title">Como Funciona</h2>
+    <div class="grid three-col">
+      <div class="card">
+        <h3>1. Cadastro de Demanda</h3>
+        <p>Órgãos públicos inserem solicitações detalhadas em poucos minutos.</p>
+      </div>
+      <div class="card">
+        <h3>2. Match com Fornecedores</h3>
+        <p>Empresas locais recebem notificações e enviam propostas em tempo real.</p>
+      </div>
+      <div class="card">
+        <h3>3. Contratação Direta</h3>
+        <p>Processo legal e digital com trilha de auditoria e KPIs integrados.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contato" class="contato">
-    <h2>Fale com a gente</h2>
-    <p>Estamos em fase inicial e abertos a parcerias, colaborações e investimentos.</p>
-    <a href="mailto:contato@supplytree.com.br" class="btn">contato@supplytree.com.br</a>
+  <section id="contato">
+    <h2 class="section-title">Converse com a gente</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <select required>
+        <option value="">Sou...</option>
+        <option value="governo">Órgão público</option>
+        <option value="fornecedor">Fornecedor</option>
+        <option value="investidor">Investidor</option>
+      </select>
+      <textarea rows="4" placeholder="Mensagem (opcional)"></textarea>
+      <button type="submit">Entrar em contato</button>
+    </form>
   </section>
 
   <footer>
     <p>&copy; 2025 Supply TREE. Todos os direitos reservados.</p>
+    <p><a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a></p>
   </footer>
 </body>
 </html>
